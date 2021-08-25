@@ -8,21 +8,22 @@
     <title>Document</title>
   </head>
   <body>
+  </main>
     <header id="header">
-      <h1 class="holycow">Brevin Young</h1>
-      <ul class="headerul">
-        <li><h3>About me</h3></li>
-        <li><h3>Work</h3></li>
-        <li><h3>Contact Me</h3></li>
-        <li><h3>Resume</h3></li>
-      </ul>
+      <h1 id="logo">Brevin Young</h1>
+       <div>
+          <a class="header-links" href="#About_Me">About Me</a>
+          <a class="header-links" href="#Work">Work</a>
+          <a class="header-links" href="#Contact_Me">Contact Me</a>
+          <a class="header-links" href="#"target="_blank">Resume</a>
+        </div>
     </header>
-    <div id="bruh">
-      <h1 class="okay">Cool Website Here</h1>
+    <div id="main-img">
+      <h1 id="main-img-text">Cool Website Here</h1>
     </div>
     <main class="margin">
       <article class="aboutme">
-        <h2>About Me</h2>
+        <h2 class="title" id="About_Me">About Me</h2>
         <div class="column">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, in
@@ -40,51 +41,39 @@
       </article>
     </main>
     <main class="margin">
-      <article class="row">
-        <h2>Work</h2>
-
-        <div class="column">
-          <div class="bigbox">
+      <section id="display-flex">
+        <h2 class="work" id="Work">Work</h2>
+        <div id="image-grid">
+          <section class="bigbox">
             <section class="box1">
-              <h4>Surf Report</h4>
+              <h4 class="work-img-text">Surf Report</h4>
             </section>
-          </div>
+          </section>
           <section class="littlebox1">
-            <h4>LED Wall</h4>
+            <h4 class="work-img-text">LED Wall</h4>
           </section>
           <section class="littlebox2">
-            <h4>Calculator</h4>
+            <h4 class="work-img-text">Calculator</h4>
           </section>
           <section class="littlebox3">
-            <h4>Pastel Puzzels</h4>
+            <h4 class="work-img-text">Pastel Puzzels</h4>
           </section>
           <section class="littlebox4">
-            <h4>Run Buddy</h4>
+            <h4 class="work-img-text">Run Buddy</h4>
           </section>
         </div>
-      </article>
+      </section>
     </main>
-    <main class="margincontactme">
+    <main class="margin">
       <article class="aboutme">
-        <h2>Contact Me</h2>
-        <ul class="contactmeul">
-          <li>
-            <h4>About me</h4>
-            <a href="#"></a>
-          </li>
-          <li>
-            <h4>Work</h4>
-            <a href="#"></a>
-          </li>
-          <li>
-            <h4>Contact Me</h4>
-            <a href="#"></a>
-          </li>
-          <li>
-            <h4>Resume</h4>
-            <a href="#"></a>
-          </li>
-        </ul>
+        <h2 class="title" id="Contact_Me"> Contact Me</h2>
+        <section  class="contactmeul">
+          <h4>520 484 2725</h4>
+          <h4>brevinyoung@gmail.com</h4>
+          <h4>Github</h4>
+          <h4>Twitter</h4>
+          <h4>spotify</h4>
+        </section>
       </article>
     </main>
   </body>
