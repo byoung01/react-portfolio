@@ -20,13 +20,16 @@ const questionEl = document.querySelector("#question");
 const optionsEl = document.querySelector("#options");
 const start = document.querySelector("#start");
 const startPrompt = document.querySelector("#startPrompt");
+const endPrompt = document.getElementById("endPrompt");
+endPrompt.style.display = "none";
 var timer = document.getElementById("time");
-var timeLeft = 60;
+var timeLeft = 10;
+timer.innerHTML = "time left : " + timeLeft;
 
 let questionIndex = 0;
 function renderQuestion() {
   if (questionIndex === questions.length) {
-    return;
+    endScreen();
   }
   const question = questions[questionIndex];
   questionEl.textContent = question.text;
@@ -45,10 +48,10 @@ optionsEl.addEventListener("click", function (e) {
   if (!element.matches("button")) return;
   if (element.textContent === question.options[question.correctIndex]) {
     alert("Correct!");
-    timeLeft = timeLeft + 10;
+    timeLeft = timeLeft + 7;
   } else {
     alert("Incorrect!");
-    timeLeft = timeLeft - 10;
+    timeLeft = timeLeft - 7;
   }
   questionIndex++;
   renderQuestion();
@@ -63,13 +66,23 @@ function startGame() {
 }
 
 function startTime() {
-  var timeLeft = 60;
-  setInterval(function () {
+  var pleaseStop = setInterval(function countDown() {
     timeLeft--;
     timer.innerHTML = "time left : " + timeLeft;
 
     if (timeLeft === 0) {
+      clearInterval(pleaseStop);
+      endScreen();
+      return;
     }
   }, 1000);
 }
-function endScreen() {}
+function endScreen() {
+  debugger;
+  questionEl.textContent = "";
+  optionsEl.innerHTML = "";
+  endPrompt.style.display = "block";
+
+  clearInterval(startTime);
+  return;
+}
