@@ -21,10 +21,14 @@ const optionsEl = document.querySelector("#options");
 const start = document.querySelector("#start");
 const startPrompt = document.querySelector("#startPrompt");
 const endPrompt = document.getElementById("endPrompt");
+const scoreBoard = document.getElementById("scoreBoard");
+const highscore = document.getElementById("highscore");
+
 endPrompt.style.display = "none";
 var timer = document.getElementById("time");
-var timeLeft = 10;
+var timeLeft = 25;
 timer.innerHTML = "time left : " + timeLeft;
+var score = 0;
 
 let questionIndex = 0;
 function renderQuestion() {
@@ -48,10 +52,12 @@ optionsEl.addEventListener("click", function (e) {
   if (!element.matches("button")) return;
   if (element.textContent === question.options[question.correctIndex]) {
     alert("Correct!");
-    timeLeft = timeLeft + 7;
+    timeLeft = timeLeft + 5;
+    score++;
+    console.log(score);
   } else {
     alert("Incorrect!");
-    timeLeft = timeLeft - 7;
+    timeLeft = timeLeft - 5;
   }
   questionIndex++;
   renderQuestion();
@@ -78,11 +84,14 @@ function startTime() {
   }, 1000);
 }
 function endScreen() {
-  debugger;
   questionEl.textContent = "";
   optionsEl.innerHTML = "";
   endPrompt.style.display = "block";
-
-  clearInterval(startTime);
+  scoreBoard.textContent = `you got ${score} out of 3!`;
+  const scoreBtn = document.createElement("button");
+  scoreBtn.innerHTML = "scores";
+  highscore.append(scoreBtn);
   return;
 }
+
+function highscores()
