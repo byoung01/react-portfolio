@@ -87,11 +87,11 @@ function endScreen() {
   questionEl.textContent = "";
   optionsEl.innerHTML = "";
   endPrompt.style.display = "block";
-  scoreBoard.textContent = `you got ${score} out of 3!`;
+  scoreBoard.textContent = `you got ${score} out of 3 correct!`;
   const scoreBtn = document.createElement("button");
   scoreBtn.innerHTML = "scores";
   highscore.append(scoreBtn);
   return;
 }
 
-function highscores()
+function highscores() {}
