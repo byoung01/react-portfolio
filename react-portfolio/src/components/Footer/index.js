@@ -22,7 +22,7 @@ function Footer() {
         href="https://github.com/byoung01"
         target="_blank"
       >
-        Github
+        Git
       </a>
     </nav>
   );
