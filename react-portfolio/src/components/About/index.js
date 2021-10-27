@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div>
-      <div>
+      <div style={{ margin: "1em 2em 0 2em" }}>
         <p>
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

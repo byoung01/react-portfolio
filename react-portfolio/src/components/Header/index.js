@@ -8,7 +8,10 @@ function Header() {
 
   return (
     <header>
-      <div className="navbar navbar-expand-lg navbar-light bg-light">
+      <div
+        className="navbar navbar-expand-lg navbar-light bg-light"
+        style={{ paddingLeft: "2em", paddingRight: "2em", marginBottom: "5em" }}
+      >
         <h1 className="navbar-brand">Brevin Young</h1>
         <Nav></Nav>
       </div>

@@ -33,14 +33,22 @@ function Repos() {
       link: "https://byoung01.github.io/weatherapp/",
     },
     {
-      name: "2Chit2Chat",
-      repo: "https://github.com/byoung01/e-commerce",
-      link: "https://github.com/byoung01/e-commerce",
+      name: "Work Day",
+      repo: "https://github.com/byoung01/Work-Day",
+      link: "https://byoung01.github.io/Work-Day/",
     },
   ]);
   return (
     <div>
-      <div>
+      <div
+        style={{
+          padding: "2em 1em",
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+        }}
+      >
         {projects.map((project, id) => (
           <Projects project={project} key={id} />
         ))}

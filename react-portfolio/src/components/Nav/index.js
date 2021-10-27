@@ -1,14 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import { Link, withRouter } from "react-router-dom";
 
 function Nav() {
   return (
-    <div class="navbar-nav">
-      <span class="nav-item nav-link">About</span>
-      <span class="nav-item nav-link">Projects</span>
-      <span class="nav-item nav-link">Contact</span>
-      <span class="nav-item nav-link">Resume</span>
-    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item nav-link">
+        <Link to="/">About</Link>
+      </li>
+      <li class="nav-item nav-link">
+        <Link to="/repos">Projects</Link>
+      </li>
+      <li class="nav-item nav-link">
+        <Link to="/contact">Contact</Link>
+      </li>
+      <li class="nav-item nav-link">
+        <Link to="/resume">Resume</Link>
+      </li>
+    </ul>
   );
 }
 export default Nav;
