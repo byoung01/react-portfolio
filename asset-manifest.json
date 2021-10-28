@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/react-portfolio/static/js/main.96a399ab.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.96a399ab.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/react-portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.3930a31c.chunk.js": "/react-portfolio/static/js/2.3930a31c.chunk.js",
+    "static/js/2.3930a31c.chunk.js.map": "/react-portfolio/static/js/2.3930a31c.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/react-portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/js/2.3930a31c.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.3930a31c.chunk.js.LICENSE.txt",
+    "static/media/2Chit2Chat.png": "/react-portfolio/static/media/2Chit2Chat.bd1cbd28.png",
+    "static/media/Budget Tracker.png": "/react-portfolio/static/media/Budget Tracker.aa18ab68.png",
+    "static/media/E-commerce Backend.png": "/react-portfolio/static/media/E-commerce Backend.2aad07d1.png",
+    "static/media/Soundboard.png": "/react-portfolio/static/media/Soundboard.d600b3df.png",
+    "static/media/Weather Tracker.png": "/react-portfolio/static/media/Weather Tracker.fafb0bb2.png",
+    "static/media/Work Day.png": "/react-portfolio/static/media/Work Day.36b5777d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7530632e.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.3930a31c.chunk.js",
+    "static/js/main.96a399ab.chunk.js"
+  ]
+}
