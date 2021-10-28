@@ -14,7 +14,7 @@ function App() {
     <div>
       <main>
         <Header />
-        <Route exact path="/react-portfolio" component={About} />
+        <Route exact path="/" component={About} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/repos" component={Repos} />
         <Route exact path="/contact" component={Contact} />
@@ -24,11 +24,3 @@ function App() {
   );
 }
 export default App;
-
-{
-  /* <Header/>
-<About/>
-<Resume/>
-<Repos/>
-<Footer/> */
-}
